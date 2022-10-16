@@ -1,29 +1,23 @@
 import "./TaskCard.css";
 
-const TaskCard = () => {
-    const taskId = "T-2";
-    const taskStatus = "Todo";
-    const taskContent = "Create a Design System for Enum Workspace.";
-    const taskDueDate = "Due Date";
-    const taskDate = new Date(2022, 5, 23);
-
+const TaskCard = (props) => {
     return (
         <div className="card-wrapper">
             <div className="card-header">
-                <p className="task-id">{taskId}</p>
+                <p className="task-id">{props.id}</p>
                 <div className="badge">
-                    <p>{taskStatus}</p>
+                    <p>{props.status}</p>
                 </div>
             </div>
 
             <div className="card-content">
-                <p>{taskContent}</p>
+                <p>{props.content}</p>
             </div>
 
             <div className="card-footer">
                 <div>
-                    <p className="due-date">{taskDueDate}</p>
-                    <p className="date">{taskDate.toLocaleDateString()}</p>
+                    <p className="due-date">Due Date</p>
+                    <p className="date">{props.dueDate.toLocaleDateString()}</p>
                 </div>
             </div>
         </div>
