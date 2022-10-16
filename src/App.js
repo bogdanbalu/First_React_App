@@ -1,13 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import TaskCard from './components/task-card/TaskCard';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello Word</h1>
-        <p>Start learning React!</p>
-      </header>
+  return ( 
+    <div className="app-container">
+      <TaskCard />
     </div>
   );
 }
