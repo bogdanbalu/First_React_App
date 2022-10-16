@@ -1,13 +1,14 @@
 import "./TaskCard.css";
+import Badge from "../badge/Badge";
+import DueDate from "../due-date/DueDate";
 
 const TaskCard = (props) => {
+    console.log(props);
     return (
         <div className="card-wrapper">
             <div className="card-header">
                 <p className="task-id">{props.data.id}</p>
-                <div className="badge">
-                    <p>{props.data.status}</p>
-                </div>
+                <Badge status={props.data.status} />
             </div>
 
             <div className="card-content">
@@ -17,7 +18,7 @@ const TaskCard = (props) => {
             <div className="card-footer">
                 <div>
                     <p className="due-date">Due Date</p>
-                    <p className="date">{props.data.dueDate.toLocaleDateString()}</p>
+                    <DueDate date={props.data.dueDate}/>
                 </div>
             </div>
         </div>

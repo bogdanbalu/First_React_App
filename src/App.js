@@ -8,19 +8,19 @@ function App() {
       id: "T-1",
       status: "To do",
       content: "1. Create a Design System for Enum Workspace.",
-      dueDate: new Date(2022, 5, 22)
+      dueDate: new Date(2022, 5, 24)
     },
 
     {
       id: "T-2",
-      status: "To do",
+      status: "In progress",
       content: "1. Create a Design System for Enum Workspace.",
-      dueDate: new Date(2022, 5, 22)
+      dueDate: new Date(2022, 5, 21)
     },
 
     {
       id: "T-3",
-      status: "To do",
+      status: "Completed",
       content: "1. Create a Design System for Enum Workspace.",
       dueDate: new Date(2022, 5, 22)
     },
