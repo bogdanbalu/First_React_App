@@ -3,7 +3,6 @@ import Badge from "../badge/Badge";
 import DueDate from "../due-date/DueDate";
 
 const TaskCard = (props) => {
-    console.log(props);
     return (
         <div className="card-wrapper">
             <div className="card-header">
@@ -16,10 +15,7 @@ const TaskCard = (props) => {
             </div>
 
             <div className="card-footer">
-                <div>
-                    <p className="due-date">Due Date</p>
-                    <DueDate date={props.data.dueDate}/>
-                </div>
+                <DueDate date={props.data.dueDate}/>
             </div>
         </div>
     );

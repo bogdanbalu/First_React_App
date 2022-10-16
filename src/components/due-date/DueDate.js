@@ -1,9 +1,11 @@
 import "./DueDate.css";
 
 const DueDate = (props) => {
-    console.log(props);
     return (
-        <p className="date">{props.date.toLocaleDateString()}</p>
+        <div>
+            <p className="due-date">Due Date</p>
+            <p className="date">{props.date.toLocaleDateString()}</p>
+        </div>
     );
 }
 
